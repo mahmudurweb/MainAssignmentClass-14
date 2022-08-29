@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-section{
+    text-align: center;
+    padding: 10px;
+
+}
+.header-section ul{
+    text-align: center;
+}
+.header-section ul li{
+    display: inline-block;
+    padding: 10px;
+    background-color: #4ee4e4;
+}
+.header-section ul li:hover{
+    background: #fff;
+}
+.header-section ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative; 
+}
+.header-section ul li a::before{
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+    
+}
+.header-section ul li a:hover{
+    color: #4ee4e4;
+}
+.header-section ul li a:hover::before{
+    width: 100%;    
+}
+
+/* banner-section */
+.banner-section{
+    text-align: center;
+    background-color: #48dbfb;
+    padding: 100px 0;
+    margin: 0 auto;
+    color: #fff;
+}
+.banner-section p{
+    font-size: 25px;
+}
+.banner-section h1{
+    font-size: 57px;
+    margin-bottom: 20px;
+}
+.banner-section a {
+	text-decoration: none;
+	color: #ddd;
+	background-color: #fff;
+	padding: 15px 20px;
+	border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.banner-section a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+    transition: .4s;
+    z-index: -1;
+}
+.banner-section a:hover::before{
+    width: 100%;
+}
+.banner-section a span{
+    margin-right: 5px;
+}
+
+/* about-section */
+.about-section{
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+/* gallery-section */
+.gallery-section{
+    width: 1240px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.gallery-section .img01{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-section .img01 img {
+    max-width: 100%;
+    transition: .5s;
+
+}
+.gallery-section .img01 img:hover{
+    transform: rotate(360deg);
+}
+
+
+    
+.gallery-section .img02{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img02 img {
+    max-width: 100%;
+    transition: .5s;
+
+}
+.gallery-section .img02 img:hover{
+    transform: rotate(30deg);
+}
+
+.gallery-section .img03{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img03 img {
+    max-width: 100%;
+    transition: .5s;
+    margin: 0;
+}
+.gallery-section .img03 img:hover{
+    transform: rotate(-30deg);
+}
+
+
+.gallery-section .img04{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img04 img {
+    max-width: 100%;
+    transition: .5s;
+    margin: 0;
+
+}
+.gallery-section .img04 img:hover{
+    transform: rotate(-30deg);
+}
+
+.gallery-section .img05{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img05 img {
+    max-width: 100%;
+    transition: .5s;
+    margin: 0;
+
+}
+.gallery-section .img05 img:hover{
+    transform: rotate(30deg);
+}
+
+.gallery-section .img06{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img06 img {
+    max-width: 100%;
+    transition: .5s;
+    margin: 0;
+
+}
+.gallery-section .img06 img:hover{
+    transform: rotate(360deg);
+}
+
+.gallery-section .img07{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img07 img {
+    max-width: 100%;
+    transition: .5s;
+    margin: 0;
+
+}
+.gallery-section .img07 img:hover{
+    transform: rotate(10deg) scale(1.2);
+}
+
+.gallery-section .img08{
+    width: 250px;
+	margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-section .img08 img {
+    max-width: 100%;
+    transition: .5s;
+    margin: 0;
+
+}
+.gallery-section .img08 img:hover{
+    transform: scale(1.2);
+}
+
+
+/* contact-section */
+.contact-section{
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contact-section h1{
+    margin-bottom: 20px;
+}
+.contact-section p{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.contact-section a {
+	background-color: #000;
+	padding: 10px 10px;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 150px;
+	margin-left: 150px;
+}
+.step1{
+    transform: rotate(-45deg);
+    transition: .4s;
+}
+.step1:hover{
+    transform: rotate(0);
+    background-color: #2fafd5;
+    color: #000;
+}
+.step2{
+    transform: rotate(0);
+    transition: .4s;
+}
+.step2:hover{
+    transform: scale(1.2);
+    background-color: #2fafd5;
+    color: #000;
+}
+
+.step3{
+    transform: rotate(45deg);
+    transition: .4s;
+}
+.step3:hover{
+    transform: rotate(0);
+    background-color: #2fafd5;
+    color: #000;
+}
+
+/* footer-section */
+.footer-section{
+    background-color: #2e2f31;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
